@@ -1,88 +1,69 @@
-# Digital Nurture Java FSE
+# Local Community Event Portal
 
-This repository contains the exercises and mini projects completed as part of the Cognizant Digital Nurture 5.0 Java FSE Upskilling Program.
+A responsive HTML5 web application developed as part of the Cognizant Digital Nurture 5.0 Upskilling Program.
 
-## Repository Structure
+## Project Overview
 
-```text
-Digital-Nurture-Java-FSE/
-│
-├── HTML5-Exercises/
-├── CSS3-Exercises/
-├── JavaScript-Exercises/
-├── Bootstrap5-Exercises/
-├── SQL-Exercises/
-├── CoreJava-Exercises/
-│
-└── README.md
-```
+The Local Community Event Portal is a browser-based application designed to help residents:
+
+- Register for community events
+- View event galleries
+- Access event information
+- Find nearby events using geolocation
+- Save event preferences
 
 ---
 
-## Modules Covered
+## Features Implemented
 
-### HTML5
-- Semantic HTML5 Structure
-- Navigation and Linking
-- Forms and Validation
-- Media Elements
-- Geolocation API
-- Local Storage and Session Storage
-- Event Handling
+### HTML5 Base Structure
+- Semantic HTML5 tags
+- Proper document structure
+- Comments for sections
 
-### CSS3
-- Selectors
-- Box Model
-- Responsive Design
-- Media Queries
-- Styling and Layouts
+### Navigation and Linking
+- Navigation bar using `<nav>`
+- Internal section linking
+- External help page link
 
-### JavaScript
-- Variables and Functions
-- DOM Manipulation
-- Event Handling
-- Arrays and Objects
-- Async JavaScript
-- Fetch API
+### Styling with ID and Class
+- Welcome banner using `id`
+- Highlight effects using `class`
+- Inline styling for special offers
 
-### Bootstrap 5
-- Grid System
-- Components
-- Forms
-- Responsive Utilities
-- Bootstrap Icons
+### Image Gallery
+- Event gallery with images
+- Image captions
+- Styled image borders
 
-### ANSI SQL using MySQL
-- SELECT Queries
-- JOINS
-- GROUP BY
-- Subqueries
-- Constraints
-- CRUD Operations
+### Event Registration Form
+- Input validation
+- Required fields
+- Placeholder text
+- Autofocus support
+- Confirmation output message
 
-### Core Java
-- OOP Concepts
-- Collections Framework
-- Exception Handling
-- Multithreading
-- JDBC
-- File Handling
+### JavaScript Event Handling
+- onblur validation
+- onchange event handling
+- onclick confirmation
+- ondblclick image enlargement
+- Keyboard event character counter
 
----
+### Video Integration
+- Video player with controls
+- oncanplay media event
+- onbeforeunload warning
 
-## Project Included
+### Web Storage
+- localStorage implementation
+- sessionStorage support
+- Clear preferences functionality
 
-### Local Community Event Portal
-A browser-based HTML5 application developed for community event registration and management.
-
-### Features
-- Responsive navigation
-- Event registration form
-- Event gallery
-- Video integration
-- Geolocation support
-- User preference storage
-- JavaScript event handling
+### Geolocation API
+- Fetch current location
+- Display coordinates
+- Error handling support
 
 ---
 
@@ -91,19 +72,31 @@ A browser-based HTML5 application developed for community event registration and
 - HTML5
 - CSS3
 - JavaScript
-- Bootstrap 5
-- MySQL
-- Core Java
-- Git & GitHub
+
+---
+
+## Folder Structure
+
+```text
+HTML5-Community-Event-Portal/
+│
+├── index.html
+├── help.html
+├── style.css
+├── script.js
+├── images/
+└── README.md
+```
+
+---
+
+## Developed For
+
+Cognizant Digital Nurture 5.0  
+Java Full Stack Engineer (FSE)
 
 ---
 
 ## Author
-Nalla Bhavitha
 
----
-
-## Program
-
-Cognizant Digital Nurture 5.0  
-Java Full Stack Engineer (FSE)
+Bhavitha
