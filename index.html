@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Community Event Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #welcomeBanner {
+      background-color: blue;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="pageLoader" class="page-loader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Navigation -->
+  <header class="navbar">
+    <a href="#home" class="logo">
+      <span>CE</span>
+      Community Events
+    </a>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button>
+
+    <nav class="nav-links" id="navLinks">
+      <a href="#home">Home</a>
+      <a href="#events">Events</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#register">Register</a>
+      <a href="#feedback">Feedback</a>
+      <a href="#location">Location</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content reveal">
+        <p id="welcomeBanner" class="tag">City Council Portal</p>
+        <h1>Discover, Register, and Connect With Local Events</h1>
+        <p class="hero-text">
+          A modern portal for residents to explore public events, register online,
+          give feedback, and find nearby community programs.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#events" class="btn primary-btn">Explore Events</a>
+          <a href="#register" class="btn secondary-btn">Register Now</a>
+        </div>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div>
+          <strong>30+</strong>
+          <span>Monthly Events</span>
+        </div>
+        <div>
+          <strong>24/7</strong>
+          <span>Online Access</span>
+        </div>
+        <div>
+          <strong>Free</strong>
+          <span>Community Services</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="events" class="section">
+      <div class="section-heading reveal">
+        <span class="section-tag">Upcoming Programs</span>
+        <h2>Featured Community Events</h2>
+        <p>Choose from public programs hosted across the city.</p>
+      </div>
+
+      <div class="event-grid">
+        <article class="event-card reveal">
+          <img src="https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80" alt="Community cleanup">
+          <div>
+            <span class="event-date">Jun 12</span>
+            <h3>Community Cleanup</h3>
+            <p>Join neighbors to clean parks, streets, and shared public spaces.</p>
+            <a href="#register">Register</a>
+          </div>
+        </article>
+
+        <article class="event-card reveal">
+          <img src="https://images.unsplash.com/photo-1501281668745-f7f57925c3b4?auto=format&fit=crop&w=900&q=80" alt="Music festival">
+          <div>
+            <span class="event-date">Jun 18</span>
+            <h3>Music Festival</h3>
+            <p>Enjoy local bands, food stalls, and family-friendly entertainment.</p>
+            <a href="#register">Register</a>
+          </div>
+        </article>
+
+        <article class="event-card reveal">
+          <img src="https://images.unsplash.com/photo-1576091160550-2173dba999ef?auto=format&fit=crop&w=900&q=80" alt="Health camp">
+          <div>
+            <span class="event-date">Jun 25</span>
+            <h3>Health Camp</h3>
+            <p>Free health checkups, wellness sessions, and public awareness talks.</p>
+            <a href="#register">Register</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" class="section alt-section">
+      <div class="section-heading reveal">
+        <span class="section-tag">Gallery</span>
+        <h2>Moments From Past Events</h2>
+        <p>Double-click an image to enlarge it.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <figure class="reveal">
+          <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=80" alt="Food fair" ondblclick="enlargeImage(this)">
+          <figcaption>Food Fair</figcaption>
+        </figure>
+
+        <figure class="reveal">
+          <img src="https://images.unsplash.com/photo-1469571486292-b53601020a79?auto=format&fit=crop&w=900&q=80" alt="Volunteer event" ondblclick="enlargeImage(this)">
+          <figcaption>Volunteer Meet</figcaption>
+        </figure>
+
+        <figure class="reveal">
+          <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="Festival crowd" ondblclick="enlargeImage(this)">
+          <figcaption>City Festival</figcaption>
+        </figure>
+
+        <figure class="reveal">
+          <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=80" alt="Community gathering" ondblclick="enlargeImage(this)">
+          <figcaption>Community Gathering</figcaption>
+        </figure>
+
+        <figure class="reveal">
+          <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80" alt="Charity event" ondblclick="enlargeImage(this)">
+          <figcaption>Charity Drive</figcaption>
+        </figure>
+
+        <figure class="reveal">
+          <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Public workshop" ondblclick="enlargeImage(this)">
+          <figcaption>Public Workshop</figcaption>
+        </figure>
+      </div>
+
+      <table class="gallery-table reveal">
+        <caption>Community Event Photo Gallery</caption>
+        <tr>
+          <td>
+            <img src="https://images.unsplash.com/photo-1527529482837-4698179dc6ce?auto=format&fit=crop&w=900&q=80" alt="Food fair" ondblclick="enlargeImage(this)">
+            <span>Food Fair</span>
+          </td>
+          <td>
+            <img src="https://images.unsplash.com/photo-1469571486292-b53601020a79?auto=format&fit=crop&w=900&q=80" alt="Volunteer event" ondblclick="enlargeImage(this)">
+            <span>Volunteer Meet</span>
+          </td>
+          <td>
+            <img src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80" alt="Festival crowd" ondblclick="enlargeImage(this)">
+            <span>City Festival</span>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&w=900&q=80" alt="Community gathering" ondblclick="enlargeImage(this)">
+            <span>Community Gathering</span>
+          </td>
+          <td>
+            <img src="https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80" alt="Charity event" ondblclick="enlargeImage(this)">
+            <span>Charity Drive</span>
+          </td>
+          <td>
+            <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="Public workshop" ondblclick="enlargeImage(this)">
+            <span>Public Workshop</span>
+          </td>
+        </tr>
+      </table>
+    </section>
+
+    <section id="register" class="section">
+      <div class="section-heading reveal">
+        <span class="section-tag">Registration</span>
+        <h2>Register for an Event</h2>
+        <p>Fill in your details and reserve your seat.</p>
+      </div>
+
+      <form id="eventForm" class="form-card reveal" onsubmit="submitForm(event)">
+        <div class="form-grid">
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" placeholder="Enter your full name" required autofocus>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="name@example.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" placeholder="10-digit mobile number" onblur="validatePhone()">
+            <small id="phoneError"></small>
+          </div>
+
+          <div class="form-group">
+            <label for="eventDate">Event Date</label>
+            <input type="date" id="eventDate" required>
+          </div>
+
+          <div class="form-group">
+            <label for="eventType">Event Type</label>
+            <select id="eventType" required onchange="showEventFee()">
+              <option value="">Select event type</option>
+              <option value="cleanup">Community Cleanup</option>
+              <option value="music">Music Festival</option>
+              <option value="food">Food Fair</option>
+              <option value="health">Health Camp</option>
+            </select>
+          </div>
+
+          <div class="fee-box">
+            <span>Event Fee</span>
+            <strong id="feeDisplay">Select an event</strong>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" placeholder="Any special request or question?" required></textarea>
+        </div>
+
+        <div class="form-actions">
+          <button type="submit" class="btn primary-btn" onclick="buttonConfirmation()">Submit Registration</button>
+          <button type="button" class="btn danger-btn" onclick="clearPreferences()">Clear Preferences</button>
+        </div>
+
+        <output id="confirmationMessage"></output>
+      </form>
+    </section>
+
+    <section id="feedback" class="section alt-section">
+      <div class="two-column">
+        <div class="section-heading left reveal">
+          <span class="section-tag">Feedback</span>
+          <h2>Tell Us About Your Experience</h2>
+          <p>Your feedback helps the council improve future programs.</p>
+        </div>
+
+        <div class="feedback-card reveal">
+          <label for="feedbackText">Feedback Message</label>
+          <textarea id="feedbackText" placeholder="Type your feedback here..." onkeyup="countCharacters()"></textarea>
+          <p>Characters typed: <strong id="charCount">0</strong></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="video" class="section">
+      <div class="section-heading reveal">
+        <span class="section-tag">Preview</span>
+        <h2>Event Promo Video</h2>
+        <p>Watch a short invite video for upcoming city programs.</p>
+      </div>
+
+      <div class="video-card reveal">
+        <video controls oncanplay="videoReady()">
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+        <p id="videoMessage"></p>
+      </div>
+    </section>
+
+    <section id="location" class="section alt-section">
+      <div class="two-column">
+        <div class="section-heading left reveal">
+          <span class="section-tag">Location</span>
+          <h2>Find Nearby Events</h2>
+          <p>Use browser geolocation to get your current coordinates.</p>
+        </div>
+
+        <div class="map-card reveal">
+          <div class="map-placeholder">
+            <span>Map Area</span>
+            <p>Your location result will appear below.</p>
+          </div>
+
+          <button class="btn primary-btn" onclick="findNearbyEvents()">Find Nearby Events</button>
+          <p id="locationResult" class="location-result">Waiting for location request.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="section-heading reveal">
+        <span class="section-tag">Support</span>
+        <h2>Contact City Council</h2>
+        <p>Reach out for event help, registration support, or service details.</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-card reveal">
+          <span>Email</span>
+          <strong>cityevents@example.com</strong>
+        </div>
+        <div class="contact-card reveal">
+          <span>Phone</span>
+          <strong>9876543210</strong>
+        </div>
+        <div class="contact-card reveal">
+          <span>Office</span>
+          <strong>Mon - Sat, 9 AM - 5 PM</strong>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div>
+      <h3>Community Events</h3>
+      <p>Connecting residents with city programs and public services.</p>
+    </div>
+
+    <div class="footer-links">
+      <a href="#home">Home</a>
+      <a href="#events">Events</a>
+      <a href="#register">Register</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="social-links">
+      <a href="#" aria-label="Facebook">f</a>
+      <a href="#" aria-label="X">x</a>
+      <a href="#" aria-label="LinkedIn">in</a>
+    </div>
+
+    <p class="copyright">&copy; 2026 Local City Council. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
